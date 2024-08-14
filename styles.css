@@ -1,0 +1,109 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  background-color: white;
+}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  canvas{
+    opacity: 0%;
+  }
+}
+@media (max-width: 768px) {
+  canvas{
+    opacity: 0%;
+  }
+}
+#button-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row; /* Change to row for horizontal alignment */
+  align-items: center;
+}
+
+.info-text {
+  font-family: "DM Sans", sans-serif;
+  opacity: 0%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+.info-text {
+  position: relative;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  top: 50%;
+  font-size: 25px;
+  opacity: 100%;
+}
+}
+
+
+@media (max-width: 767px){
+  .info-text {
+    position: relative;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    top: 50%;
+    font-size: 15px;
+    opacity: 100%;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px; /* Adjust margin for horizontal spacing */
+  border: 2px solid black;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+#length-display {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  padding: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: black;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #length-display{
+    opacity: 0%;
+  }
+}
+@media (max-width: 768px) {
+  #length-display{
+    opacity: 0%;
+  }
+}
