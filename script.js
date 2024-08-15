@@ -5,7 +5,7 @@ const ctx = canvas.getContext('2d');
 function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    drawCenteredText(); // Draw the centered text when resizing
+    drawCenteredText(); 
 }
 
 window.addEventListener('resize', resizeCanvas);
