@@ -59,7 +59,7 @@ function drawCenteredText() {
 
 
 function fadeEffect() {
-    ctx.fillStyle = 'rgba(255, 255, 255, 0.015)'; // Reduced transparency for slower fading
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.015)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
 }
 
@@ -72,7 +72,7 @@ canvas.addEventListener('mousemove', draw);
 
 function animate() {
     fadeEffect();
-    drawCenteredText(); // Redraw the centered text to ensure it doesn't fade
+    drawCenteredText(); 
     requestAnimationFrame(animate);
 }
 
